@@ -25,6 +25,13 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 /* HEADINGS ------------------------------------- */
 h1,
 h2,
@@ -119,16 +126,22 @@ ul {
   }
 }
 
+input{
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+}
+
 /* BUTTONS -------------------------------------- */
 a.button,
 button {
-  background: var(--qwik-light-blue);
+  background: var(--bitrock-primary);
   border: none;
   border-radius: 8px;
   color: white;
   cursor: pointer;
   font-size: 0.8rem;
-  padding: 15px 20px;
+  padding: 6px 12px;
   text-align: center;
 }
 
@@ -139,14 +152,14 @@ button.button-dark {
 
 a.button.button-small,
 button.button-small {
-  padding: 15px 25px;
+  padding: 6px 12px;
 }
 
 @media screen and (min-width: 768px) {
   a.button,
   button {
     font-size: 1rem;
-    padding: 23px 35px;
+    padding: 6px 12px;
   }
 }
 
